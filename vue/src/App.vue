@@ -1,8 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+
+import Header from './components/Header.vue';
+</script>
 
 <template>
-  <div class="h-screen w-full grid place-content-center">
-    <h1 class="text-3xl">Hello Cookbook!</h1>
-    <p>Please read the root README.md file to start your Vue journey!</p>
+  <div class="h-screen">
+    <Header />
+    <div class="screen-view h-full w-full p-8">
+      <RouterView />
+    </div>
   </div>
 </template>

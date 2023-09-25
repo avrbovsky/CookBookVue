@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import { VueQueryPlugin } from '@tanstack/vue-query';
 import { createPinia } from 'pinia';
 import piniaPluginPersistedState from 'pinia-plugin-persistedstate';
+import router from './router/router';
 
 import { queryClient } from '@/api/queryClient';
 
@@ -15,6 +16,6 @@ pinia.use(piniaPluginPersistedState);
 
 app.use(pinia);
 app.use(VueQueryPlugin, { queryClient });
-// app.use(router);
+app.use(router);
 
 app.mount('#app');
