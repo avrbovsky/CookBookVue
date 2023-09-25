@@ -21,7 +21,7 @@ onMounted(async () => {
     <div class="flex justify-between mb-8">
       <h2 class="text-4xl text-blue-500">Recepty</h2>
       <RouterLink
-        to="/novy-recept"
+        to="/add"
         class="hover:bg-gray-300 border-solid border px-2 py-1 rounded-2xl text-sm border-gray-400 items-center my-auto"
       >
         Novy recept

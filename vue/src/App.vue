@@ -7,7 +7,7 @@ import Header from './components/Header.vue';
 <template>
   <div class="h-screen">
     <Header />
-    <div class="screen-view h-full w-full p-8">
+    <div class="screen-view w-full p-8">
       <RouterView />
     </div>
   </div>

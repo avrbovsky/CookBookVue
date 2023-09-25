@@ -1,14 +1,19 @@
 <script setup lang="ts">
-import type { Recipe } from '@/types/recipe';
+import { computed } from 'vue';
 
-defineProps<{ recipe: Recipe }>();
+import type { Recipe } from '@/types/recipe';
+import { getTimeString } from '@/utils/timeUtils';
+
+const props = defineProps<{ recipe: Recipe }>();
+
+const time = computed(() => getTimeString(props.recipe.preparationTime));
 </script>
 
 <template>
   <div class="recipe-card">
     <div class="card-title">
       <h1 class="truncate">{{ recipe.title }}</h1>
-      <p>{{ recipe.preparationTime }}</p>
+      <p>{{ time }}</p>
     </div>
   </div>
 </template>
