@@ -10,11 +10,6 @@ import { RouterLink } from 'vue-router';
       <img src="/src/assets/cow.png" class="image" alt="Krava" />
     </RouterLink>
     <div>
-      <input
-        type="text"
-        placeholder="Hledat..."
-        class="search-recipe-input mx-2 my-2"
-      />
       <RouterLink to="/" class="px-2 py-2 hover:underline">Recepty</RouterLink>
       <RouterLink to="/prilohy" class="px-2 py-2 hover:underline">
         Prilohy
